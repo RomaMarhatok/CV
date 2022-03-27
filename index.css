@@ -2,8 +2,25 @@ html {
 	height: 100%;
 }
 .grid-container {
+	grid-gap: 10px;
+	padding-left: 5%;
+	padding-right: 5%;
 	display: grid;
 	grid-template-columns: auto auto auto auto;
+}
+.grid-item > div > span {
+	padding-left: 15%;
+}
+
+.grid-item {
+	width: 100%;
+	transition: all 2s;
+}
+
+.grid-item:hover {
+	animation-duration: 2s;
+	border-radius: 20px;
+	background-color: whitesmoke;
 }
 body {
 	font-family: "Noto Sans JP", sans-serif;
